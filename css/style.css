@@ -1,0 +1,250 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+    background: #d3d3d3;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #181818;
+}
+
+/* ===== HEADER ===== */
+.luxury-header {
+    width: 100%;
+    background: #0f0f0f;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.header-inner {
+    width: 96%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 0;
+}
+
+.logo img {
+    height: 55px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #d6d6d6;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+}
+
+.menu a:hover {
+    color: #c2a44a;
+}
+
+/* ===== SOCIAL ===== */
+.social-icons a {
+    color: #d6d6d6;
+    margin-left: 20px;
+    font-size: 1.1rem;
+}
+
+.social-icons a:hover {
+    color: #c2a44a;
+}
+
+/* ===== FULL WIDTH WRAPPER ===== */
+.luxury-wrapper {
+    width: 96%;
+    margin-top: 20px;
+}
+
+/* ===== MAIN CARD ===== */
+.luxury-card {
+    background: #ffffff;
+    padding: 60px;
+    border: 1px solid #d0d0d0;
+    box-shadow: 0 45px 90px rgba(0,0,0,0.06);
+}
+
+/* ===== IMAGE ===== */
+.image-card img {
+    width: 100%;
+    box-shadow: 0 35px 70px rgba(0,0,0,0.15);
+}
+
+/* ===== TEXT ===== */
+.text-card h1 {
+    font-size: 2.7rem;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    margin-bottom: 28px;
+}
+
+.text-card h1::after {
+    content: "";
+    width: 100px;
+    height: 2px;
+    background: #c2a44a;
+    display: block;
+    margin-top: 18px;
+}
+
+.text-card p {
+    font-size: 1.05rem;
+    line-height: 2;
+    color: #3d3d3d;
+}
+
+/* ===== TABLE ===== */
+.luxury-table {
+    width: 100%;
+    background: #ffffff;
+    border-collapse: collapse;
+    border: 1px solid #d0d0d0;
+    box-shadow: 0 45px 90px rgba(0,0,0,0.06);
+}
+
+.luxury-table th {
+    background: #0f0f0f;
+    color: #c2a44a;
+    padding: 22px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    width: 20%;
+}
+
+.luxury-table td {
+    padding: 40px;
+    border-top: 1px solid #e3e3e3;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background-color: #0f0f0f;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.footer h5 {
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    margin-bottom: 15px;
+    color: #c2a44a; /* luxury gold highlight */
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #c2a44a;
+}
+
+.footer .map iframe {
+    border-radius: 0; /* keep edges sharp */
+    border: none;
+    width: 100%;
+}
+
+.footer hr {
+    margin: 30px 0;
+}
+
+
+.luxury-table td {
+    vertical-align: top;
+    padding: 35px 25px;
+}
+
+.luxury-table h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+    text-transform: uppercase;
+}
+
+/* subtle luxury divider */
+.luxury-table h3::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: #c2a44a;
+    margin-top: 10px;
+}
+
+.luxury-table p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+.stats-cards .stat-card {
+    background: #ffffff;
+    border: 1px solid #d0d0d0;
+    padding: 28px 15px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    height: 100%; /* keeps all cards equal height */
+}
+
+.stats-cards .stat-card i {
+    color: #c2a44a;
+    margin-bottom: 12px;
+}
+
+.stats-cards .stat-card h4 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.stats-cards .stat-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* Hover effect */
+.stats-cards .stat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 35px 70px rgba(0,0,0,0.12);
+}
+
+.floating-social {
+    position: fixed;       
+    top: 50%;              
+    left: 20px;            
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 9999;         
+}
+
+.floating-social .social-link {
+    font-size: 60px;
+    background: linear-gradient(45deg, #00ff00, #ffffff, #ff0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.floating-social .social-link:hover {
+    transform: scale(1.2);
+    filter: brightness(1.3); /* slightly brighter on hover */
+}
+
+
